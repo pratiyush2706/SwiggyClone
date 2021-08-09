@@ -13,7 +13,7 @@ export const Home = () => {
   useEffect(() => {
     async function apiCall() {
       try {
-        fetch("http://cdn.adpushup.com/reactTask.json")
+        fetch("https://cdn.adpushup.com/reactTask.json")
         .then(res => res.json())
         .then(data => {
           const onlyOnSwiggy = getSwiggyExclusiveRestaurants(data);
