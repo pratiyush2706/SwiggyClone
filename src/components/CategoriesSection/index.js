@@ -13,8 +13,8 @@ export const CategoriesSection = ({ categoryDetails }) => {
     <div className={classes.container}>
       <Typography variant="h3">{capitalizeFirstLetter(category)}</Typography>
       <Grid container className={classes.cardContainer}>
-        {restaurantList.map((restaurant) => (
-          <Grid item sm={12} md={4} className={classes.card}>
+        {restaurantList.map((restaurant, index) => (
+          <Grid item sm={12} key={`${restaurant.name}_${index}`} md={4} className={classes.card}>
               <img
                 src={getRandomImage()}
                 alt="Restuarant"
