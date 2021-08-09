@@ -1,4 +1,3 @@
-import { Grid } from '@material-ui/core'
 import React from 'react';
 import { CategoriesSection } from '../../components/CategoriesSection';
 
@@ -9,7 +8,7 @@ export const Restaurants = ({ data }) => {
   return (
     <main>
       {data.map(allCategories => (
-        <div id={`${allCategories.category}`} className={classes.container}>
+        <div id={`${allCategories.category}`} key={allCategories.category} className={classes.container}>
             <CategoriesSection categoryDetails={allCategories} />
         </div>
       ))}
