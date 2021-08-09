@@ -16,3 +16,5 @@ Approx 4 hours
 -> fallback incase of error
 -> circular loader
 
+## Deployed at:
+https://swiggyclone.netlify.app/
